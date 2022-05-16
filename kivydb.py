@@ -6,6 +6,7 @@ from GridLayoutColor import GridLayoutColor
 #####
 import json
 import pymysql.cursors
+from subprocess import Popen, PIPE
 
 from kivy.properties import ListProperty
         
@@ -25,6 +26,7 @@ class kivydb(App):
             if Resultado:
                 print("Acceso Concedido")
                 self.lbl_blank2.text="Acceso Concedido"
+		ventanaNueva = Popen(['python3', 'GGmenu.py'], stdout=PIPE, stderr=PIPE)
             else:
                 print("Acceso Denegado")
                 self.lbl_blank2.text="Acceso Denegado"
