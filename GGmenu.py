@@ -63,6 +63,7 @@ class GGmenu(App):
 			#Modificaciones
         self.gdl_medio._update_color([0,128/255,128/255,1])
         self.btn.background_color = (216/255,250/255,8/255,1)
+	self.btn.bind(on_press=self.btn_press)
 			#Agregar
         self.gdl_medio.add_widget(self.lbl_ruta)
         self.gdl_medio.add_widget(self.txi_ruta)
