@@ -41,9 +41,9 @@ if (RutaCSV.exists()):
 			D.append( int(fila[8]))
 			D.append( int(fila[9]))
 			D.append( int(fila[10]))
-			D.append( datetime.strptime(fila[11], '%y-%m-%dT%H:%M:%S'))
+			D.append( datetime.strptime(fila[11], '%d/%m/%Y'))
 			print(D)
-			MiCursor.execute(SQL,D)
+			MiCursor.execute(SQL,D)S
 		
 		connection.commit()
         
