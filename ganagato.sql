@@ -12,5 +12,5 @@ CREATE TABLE ganagato (
     F7 tinyint NOT NULL,
     F8 tinyint NOT NULL,
     Bolsa decimal(13,4) NOT NULL,
-    Fecha date NOT NULL
+    Fecha datetime NOT NULL
 )ENGINE=InnoDB;
